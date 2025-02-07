@@ -1,0 +1,11 @@
+{
+  "name": "@flow-list/types",
+  "version": "0.0.1",
+  "author": "Ondřej Vít",
+  "license": "MIT",
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "echo \"No build step specified\""
+  }
+}

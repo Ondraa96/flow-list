@@ -6,9 +6,12 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "lint:all": "pnpm --parallel --filter frontend run lint && pnpm --parallel --filter backend run lint",
+    "dev": "concurrently -n frontend,backend \"pnpm --filter frontend run dev\" \"pnpm --filter backend run start:dev\"",
+    "build": "pnpm --recursive run build",
+    "lint": "pnpm --recursive run lint",
+    "format": "pnpm --recursive run format",
     "prepare": "husky install && pnpm prepare:pre-commit",
-    "prepare:pre-commit": "echo 'echo \"Running pre-commit hook...\"\npnpm run lint:all' > .husky/pre-commit && chmod +x .husky/pre-commit"
+    "prepare:pre-commit": "echo 'echo \"Running pre-commit hook...\"\npnpm run lint' > .husky/pre-commit && chmod +x .husky/pre-commit"
   },
   "keywords": [
     "journal",
@@ -21,6 +24,7 @@
     "NestJS"
   ],
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "husky": "^9.1.7"
   },
   "packageManager": "pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001"
