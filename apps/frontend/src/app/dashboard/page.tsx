@@ -5,7 +5,7 @@ export type Moment = {
 };
 
 export default async function Dashboard() {
-  const moments: Array<Moment> = await fetch("http://localhost:8000/").then(
+  const moments: Array<Moment> = await fetch("http://localhost:8001/").then(
     (response) => response.json()
   );
   return (

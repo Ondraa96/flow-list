@@ -10,13 +10,13 @@ export class MomentsService {
   }
 
   async createMoment(
-    userId: string,
+    date: string,
     text: string,
     tags: string[],
     location?: string,
   ) {
     return this.prisma.moment.create({
-      data: { userId, text, tags, location },
+      data: { date, text, tags, location },
     });
   }
 }
