@@ -102,3 +102,4 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
 1. prisma generate - for generating prisma client
 2. pnpm prisma migrate dev --name init - for creating migration
+3. pnpm prisma studio - for opening prisma studio
