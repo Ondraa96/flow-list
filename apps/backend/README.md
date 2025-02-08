@@ -104,3 +104,15 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 2. pnpm prisma migrate dev --name init - for creating migration
 3. pnpm prisma studio - for opening prisma studio
 4. pnpm prisma db push --force-reset - for resetting the database (!!!)
+
+## TODO
+
+1. CORS do env
+
+## F&Q:
+
+1. Create new module:
+
+nest generate module moments
+nest generate controller moments
+nest generate service moments

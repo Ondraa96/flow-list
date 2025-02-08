@@ -2,7 +2,7 @@
   "name": "flow-list",
   "version": "0.0.1",
   "author": "Ondřej Vít",
-  "description": "A personal journal app to log three positive moments each day, with search, tags, and reminders. Built using Next.js and NestJS.",
+  "description": "A personal diary app to log three positive moments each day, with search, tags, and reminders. Built using Next.js and NestJS.",
   "license": "MIT",
   "main": "index.js",
   "scripts": {

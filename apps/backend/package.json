@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "0.0.1",
-  "description": "Backend for a personal journal app to log three positive moments each day, with search, tags, and reminders. Built using NestJS.",
+  "description": "Backend for a personal diary app to log three positive moments each day, with search, tags, and reminders. Built using NestJS.",
   "author": "Ondřej Vít",
   "private": true,
   "license": "MIT",
@@ -23,12 +23,16 @@
   "dependencies": {
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
+    "@nestjs/mapped-types": "^2.1.0",
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/platform-fastify": "^11.0.8",
+    "@nestjs/swagger": "^11.0.3",
     "@prisma/client": "^6.3.1",
+    "class-validator": "^0.14.1",
     "csv-parser": "^3.2.0",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
