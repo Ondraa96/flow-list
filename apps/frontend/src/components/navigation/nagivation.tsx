@@ -10,7 +10,7 @@ export function Navigation() {
           <a href="/dashboard" className="hover:underline">
             Přidat moment
           </a>
-          <a href="/profile" className="hover:underline">
+          <a href="/auth/login" className="hover:underline">
             Profil
           </a>
         </div>

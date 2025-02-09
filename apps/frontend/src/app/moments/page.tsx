@@ -1,6 +1,6 @@
 "use client";
 
-import { MomentsAPI } from "@/src/lib/api";
+import { MomentsAPI } from "@/src/lib/api/api";
 import { Moment } from "@/src/types";
 import { useQuery } from "@tanstack/react-query";
 

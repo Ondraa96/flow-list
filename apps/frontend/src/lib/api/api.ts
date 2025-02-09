@@ -1,3 +1,4 @@
+import { Moment } from "../../types";
 import { fetcher } from "./fetcher";
 
 export const MomentsAPI = {

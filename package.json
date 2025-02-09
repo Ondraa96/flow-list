@@ -10,8 +10,7 @@
     "build": "pnpm --recursive run build",
     "lint": "pnpm --recursive run lint",
     "format": "pnpm --recursive run format",
-    "prepare": "husky install && pnpm prepare:pre-commit",
-    "prepare:pre-commit": "echo 'echo \"Running pre-commit hook...\"\npnpm run lint' > .husky/pre-commit && chmod +x .husky/pre-commit"
+    "prepare": "husky install"
   },
   "keywords": [
     "journal",

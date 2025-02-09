@@ -43,3 +43,9 @@ TODO:
 module.exports = {
 plugins: [require('@tailwindcss/forms')],
 };
+
+3. // "@tanstack/query" v eslint configu
+
+## FAQ:
+
+1. retezeni middleware https://reacthustle.com/blog/how-to-chain-multiple-middleware-functions-in-nextjs
