@@ -1,18 +1,33 @@
-version: '3.8'
+version: "3.8"
 
 services:
+  backend:
+    build:
+      context: ./apps/backend
+      dockerfile: Dockerfile
+    container_name: backend
+    env_file:
+      - ./apps/backend/.env
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    volumes:
+      - ./apps/backend:/app
+      - /app/node_modules
+
   postgres:
-    image: postgres:latest
-    container_name: postgres_db
+    image: postgres:15
+    container_name: postgres
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: flow-list-db
+      POSTGRES_DB: flowlist_db
     ports:
-      - "5432:5432"
+      - "5432:5432" # Databáze na portu 5432
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data # Perzistence dat
 
 volumes:
-  postgres_data:
+  postgres_data: {}
